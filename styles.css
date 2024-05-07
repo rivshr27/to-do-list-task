@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #ae7a7a; */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #582828;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(76, 53, 141, 0.1);
+}
+
+h1, h2 {
+    margin-top: 0;
+    font-weight: normal;
+    text-align: center;
+    color: #ececed;
+}
+
+.new-task {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-task input[type="text"],
+.new-task textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    background-color: #333;
+    color: #fff;
+}
+
+.new-task input[type="text"]:focus,
+.new-task textarea:focus {
+    border-color: #1c29d4;
+}
+
+.new-task button {
+    padding: 10px 20px;
+    background-color: #4857e2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #4232ca;
+}
+
+.new-task button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.taskLists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskList {
+    flex-basis: 48%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+
+.task-name {
+    font-weight: bold;
+    font-style: italic;
+    color: #4CAF50;
+}
+
+.task-description {
+    font-size: smaller;
+    color: #ddd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 4px;
+    border-left: 4px solid #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+.deleteButton,
+.completedButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 10px;
+}
+
+.completedButton {
+    background-color: #2196F3;
+    right: 70px;
+}
+
+.completedButton:hover,
+.deleteButton:hover {
+    background-color: #efebeb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
